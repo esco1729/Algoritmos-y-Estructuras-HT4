@@ -11,14 +11,14 @@ public interface Stack<E> {
 	 * 
 	 * @param item
 	 */
-	public void add(E item);
+	public void push(E item);
 
 	/**
 	 * If the Stack is not empty, the most recent item will be removed and returned.
 	 * 
 	 * @return Item
 	 */
-	public E remove();
+	public E pop();
 
 	/**
 	 * Get the current Item on the Stack (without popping it).

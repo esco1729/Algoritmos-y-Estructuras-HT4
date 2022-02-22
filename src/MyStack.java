@@ -2,11 +2,11 @@ package src;
 
 import java.util.ArrayList;
 
-public class MyStack implements Stack<Object> {
-	private ArrayList<Object> Array;
+public class MyStack <E> implements Stack<E> {
+	private ArrayList<E> array;
 
-	MyStack(ArrayList<Object> array) {
-		this.Array = array;
+	MyStack(ArrayList<E> array) {
+		this.array = array;
 	}
 
 	/**
@@ -15,8 +15,8 @@ public class MyStack implements Stack<Object> {
 	 * @param item item to be appended
 	 */
 	@Override
-	public void add(Object item) {
-		Array.add(item);
+	public void push(E item) {
+		array.add(item);
 	}
 
 	/**
@@ -26,33 +26,33 @@ public class MyStack implements Stack<Object> {
 	 * @return object saved in the object variable
 	 */
 	@Override
-	public Object remove() {
+	public E pop() {
 		int index;
-		Object object;
-		if (Array.isEmpty()) {
+		E object;
+		if (array.isEmpty()) {
 			return null;
 		} else {
-			index = Array.size() - 1;
-			object = Array.get(index);
-			Array.remove(index);
+			index = array.size() - 1;
+			object = array.get(index);
+			array.remove(index);
 		}
 		return object;
 	}
 
 	/**
-	 * Allows to see the last object in the Array, without removing it or
+	 * Allows to see the last object in the array, without removing it or
 	 * manipulating it
 	 * 
 	 * @return
 	 */
 	@Override
-	public Object peek() {
+	public E peek() {
 		try {
-			int index = Array.size() - 1;
-			return Array.get(index);
+			int index = array.size() - 1;
+			return array.get(index);
 		} catch (Exception e) {
-			String message = "";
-			return message;
+			
+			return null;
 		}
 	}
 
@@ -63,7 +63,7 @@ public class MyStack implements Stack<Object> {
 	 */
 	@Override
 	public boolean empty() {
-		if (Array.isEmpty() == true) {
+		if (array.isEmpty() == true) {
 			return true;
 		} else {
 			return false;
@@ -77,6 +77,6 @@ public class MyStack implements Stack<Object> {
 	 */
 	@Override
 	public int size() {
-		return Array.size();
+		return array.size();
 	}
 }

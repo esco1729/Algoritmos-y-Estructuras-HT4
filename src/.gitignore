@@ -12,12 +12,6 @@
 /AbstractList.class
 /DoublyLinkList.class
 /DoublyLinkedNode.class
-/SinglyLinkedListStack.class
-/StackList.class
-/iCalc.class
-/FactoryStack.class
-/StackFactory.class
-/AbstractStack.class
-/StackArrayList.class
-/StackVector.class
-/ListFactory.class
+/PilaI.class
+/IPila.class
+/SingleLinkedListStack.class
