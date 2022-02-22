@@ -42,6 +42,42 @@ public class DoublyLinkList<E> extends AbstractList<E>{
 		return temp.value();
 	}
 
+	@Override
+	public void addFirst(E value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public E getLast() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E remove(E value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void add(E value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public E remove() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 	
 }

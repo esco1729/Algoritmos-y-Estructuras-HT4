@@ -14,3 +14,10 @@
 /DoublyLinkedNode.class
 /SinglyLinkedListStack.class
 /StackList.class
+/iCalc.class
+/FactoryStack.class
+/StackFactory.class
+/AbstractStack.class
+/StackArrayList.class
+/StackVector.class
+/ListFactory.class

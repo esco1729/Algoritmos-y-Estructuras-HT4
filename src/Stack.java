@@ -40,4 +40,7 @@ public interface Stack<E> {
 	 * @return Integer indicating the size of the Stack
 	 */
 	public int size();
+	
+	
+	public E pop();
 }
