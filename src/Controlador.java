@@ -58,11 +58,11 @@ public class Controlador {
 					String element = String.valueOf(Array.get(n));
 					// if a value matches an arithmetic sign, it pushes to the commands stack
 					if (element.equals("+") || element.equals("-") || element.equals("*") || element.equals("/")) {
-						commands_stack.add(Array.get(n));
+						commands_stack.push(Array.get(n));
 					} else {
 						try {
 							double num = Double.parseDouble(element);
-							num_stack.add(num);
+							num_stack.push(num);
 						} catch (Exception e) {
 							Array.remove(n);
 							System.out.println("Se ha eliminado un dato invalido para la calculadora");
@@ -76,8 +76,8 @@ public class Controlador {
 				do {
 					System.out.println("Resultado actual de la calculadora..." + num_stack.peek());
 
-					String ConstantA = String.valueOf(num_stack.remove());
-					String ConstantB = String.valueOf(num_stack.remove());
+					String ConstantA = String.valueOf(num_stack.pop());
+					String ConstantB = String.valueOf(num_stack.pop());
 
 					double A;
 					double B;
@@ -93,11 +93,11 @@ public class Controlador {
 
 					double result;
 
-					String math_operator = String.valueOf(commands_stack.remove());
+					String math_operator = String.valueOf(commands_stack.pop());
 
 					result = operaciones(math_operator, A, B);
 					FinalResult = result;
-					num_stack.add(result);
+					num_stack.push(result);
 
 				} while (loop);
 				System.out.println("Ha finalizado la ejecucion");

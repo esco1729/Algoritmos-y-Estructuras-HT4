@@ -1,11 +1,12 @@
 package src;
 
-import com.sun.tools.javac.util.Assert;
+
 
 public class DoublyLinkList<E> extends AbstractList<E>{
 	protected int count;
 	protected DoublyLinkedNode<E> head;
 	protected DoublyLinkedNode<E> tail;
+	Node newNode = new Node(null); 
 	
 	public DoublyLinkList(){
 		// TODO Auto-generated constructor stub

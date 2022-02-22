@@ -2,9 +2,9 @@ package src;
 
 import java.util.AbstractList;
 import java.util.Iterator;
+import java.util.LinkedList;
 
-import com.sun.org.apache.bcel.internal.classfile.Node;
-import com.sun.tools.javac.util.Assert;
+
 
 /**
  * 
@@ -14,7 +14,7 @@ import com.sun.tools.javac.util.Assert;
 public class SinglyLinkedList<E> extends AbstractList<E>{
 	protected int count; // list size
 	protected Node<E> head; // ref. to first element
-	
+	 
 	public SinglyLinkedList()	
 	{
 		head = null;
@@ -44,7 +44,7 @@ public class SinglyLinkedList<E> extends AbstractList<E>{
 	public E removeLast() {
 		Node<E> finger = head;
 		Node<E> previous = null;
-		Assert.pre(head != null, "List is not empty.");
+	
 		while (finger.next() != null) //find end of list
 		{
 			previous = finger;

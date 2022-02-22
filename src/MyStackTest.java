@@ -17,19 +17,19 @@ import static org.junit.Assert.assertArrayEquals;
 public class MyStackTest {
 
 	/**
-	 * Test method for {@link src.MyStack#add(java.lang.Object)}.
+	 * Test method for {@link src.MyStack#push(java.lang.Object)}.
 	 */
 	@Test
 	public final void testAdd() {
 
 		MyStack testAdd = new MyStack(new ArrayList<Object>());
 		assertEquals(0, testAdd.size()); // TODO
-		testAdd.add("test");
+		testAdd.push("test");
 		assertEquals(1, testAdd.size());
 	}
 
 	/**
-	 * Test method for {@link src.MyStack#remove()}.
+	 * Test method for {@link src.MyStack#pop()}.
 	 */
 	@Test
 
@@ -41,7 +41,7 @@ public class MyStackTest {
 		MyStack testRemove = new MyStack(lista);
 		// TODO
 		assertEquals(3, testRemove.size());
-		testRemove.remove();
+		testRemove.pop();
 		assertEquals(2, testRemove.size());
 	}
 
