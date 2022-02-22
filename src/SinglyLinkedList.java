@@ -62,6 +62,12 @@ public class SinglyLinkedList<E> extends AbstractList<E>{
 		count--;
 		return finger.value();
 	}
+
+	@Override
+	public E get(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 		
 		
 		
@@ -71,4 +77,4 @@ public class SinglyLinkedList<E> extends AbstractList<E>{
 		
 	
 		
-}
+
