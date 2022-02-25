@@ -31,6 +31,12 @@ public class StackList<E> extends AbstractStack<E> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public void push(E item) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

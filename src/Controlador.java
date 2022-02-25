@@ -5,15 +5,26 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
 public class Controlador {
-
+	Scanner sc = new Scanner(System.in);
 	MyStack num_stack = null;
 	MyStack commands_stack = null;
 	double FinalResult;
 
+	public String opciones() {
+		System.out.println("1. Array");
+		System.out.println("2. Vector");
+		System.out.println("3. List");
+		System.out.println("4. Double");
+		String opcc = sc.nextLine();
+		return opcc;
+		
+	}
+	
 	public void ProgramLogic() {
 		ArrayList<Object> Array = new ArrayList<>();
 		ArrayList<Object> caracters = new ArrayList<>();

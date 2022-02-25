@@ -1,7 +1,7 @@
 package src;
 
 public abstract class AbstractList<E> implements List<E>{
-
+	int size = 0;
 	public AbstractList() {
 		// TODO Auto-generated constructor stub
 	}
@@ -11,7 +11,7 @@ public abstract class AbstractList<E> implements List<E>{
 	}
 	
 	public int size() {
-		return size();
+		return size;
 	}
 
 
