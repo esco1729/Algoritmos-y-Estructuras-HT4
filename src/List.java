@@ -1,5 +1,10 @@
 package src;
-
+/**
+ * 
+ * @author liter
+ *
+ * @param <E>
+ */
 public interface List<E>{
 		public int size();
 		// post: returns number of elements in list

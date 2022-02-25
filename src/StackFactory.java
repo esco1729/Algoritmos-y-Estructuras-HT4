@@ -1,8 +1,13 @@
 package src;
-
+/**
+ * 
+ * @author liter
+ *
+ * @param <E>
+ */
 public class StackFactory<E> {
     public Stack<E> getStack(String datos){
-    	if (datos.equals("ArrayList")) {
+    	if (datos.equals("Array")) {
     		return new StackArrayList<E>();}
     	else if(datos.equals("Vector")) {
     		return new StackVector<E>();}

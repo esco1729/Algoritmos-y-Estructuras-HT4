@@ -1,7 +1,12 @@
 package src;
 
 
-
+/**
+ * 
+ * @author liter
+ *
+ * @param <E>
+ */
 public class DoublyLinkList<E> extends AbstractList<E>{
 	protected int count;
 	protected DoublyLinkedNode<E> head;

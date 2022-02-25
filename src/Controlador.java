@@ -8,13 +8,20 @@ import java.util.Collections;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
-
+/**
+ * 
+ * @author liter
+ *
+ */
 public class Controlador {
 	Scanner sc = new Scanner(System.in);
 	MyStack num_stack = null;
 	MyStack commands_stack = null;
 	double FinalResult;
-
+/**
+ * 
+ * @return
+ */
 	public String opciones() {
 		System.out.println("1. Array");
 		System.out.println("2. Vector");
@@ -24,7 +31,9 @@ public class Controlador {
 		return opcc;
 		
 	}
-	
+	/**
+	 * 
+	 */
 	public void ProgramLogic() {
 		ArrayList<Object> Array = new ArrayList<>();
 		ArrayList<Object> caracters = new ArrayList<>();

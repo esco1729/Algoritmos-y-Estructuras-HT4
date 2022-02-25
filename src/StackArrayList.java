@@ -1,5 +1,10 @@
 package src;
-
+/**
+ * 
+ * @author liter
+ *
+ * @param <E>
+ */
 public class StackArrayList<E> implements Stack<E> {
 
 	@Override

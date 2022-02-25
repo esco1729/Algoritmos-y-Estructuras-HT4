@@ -1,5 +1,10 @@
 package src;
-
+/**
+ * 
+ * @author liter
+ *
+ * @param <E>
+ */
 public class StackList<E> extends AbstractStack<E> {
 
 	@Override

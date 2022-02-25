@@ -1,7 +1,14 @@
 package src;
-
+/**
+ * 
+ */
 import java.util.Vector;
-
+/**
+ * 
+ * @author liter
+ *
+ * @param <E>
+ */
 public class StackVector<E> extends AbstractStack<E> {
 	Vector<E> data = new Vector<E>();
 	

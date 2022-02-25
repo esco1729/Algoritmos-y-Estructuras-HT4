@@ -1,9 +1,18 @@
 package src;
 import java.util.Stack;
+/**
+ * 
+ * @author liter
+ *
+ */
 public class InfixPostfix implements Calculator {
 	
-	
-	
+		
+	/**
+	 * 
+	 * @param ch
+	 * @return
+	 */
 	  static int Prec(char ch)
 	    {
 	        switch (ch)
